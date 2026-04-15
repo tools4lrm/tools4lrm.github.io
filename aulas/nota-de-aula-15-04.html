@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nota de Aula - 15/04: Construindo os Alicerces</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: auto; padding: 20px; }
+        header { border-bottom: 2px solid #2c3e50; padding-bottom: 10px; margin-bottom: 20px; }
+        .analogia { background: #f0f7ff; padding: 15px; border-left: 5px solid #007bff; margin: 20px 0; }
+        code { background: #eee; padding: 2px 5px; border-radius: 4px; }
+        pre { background: #2d2d2d; color: #f8f8f2; padding: 15px; overflow-x: auto; border-radius: 8px; }
+        .passo-a-passo { background: #fff9e6; padding: 15px; border-left: 5px solid #ffc107; }
+        footer { margin-top: 40px; font-size: 0.9em; color: #666; border-top: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Aula 15/04: Primeiros Passos no Desenvolvimento Web</h1>
+    <p><strong>Assunto:</strong> Configuração de ambiente, Git e Estrutura Semântica</p>
+</header>
+
+<section>
+    <h2>1. O "Pulo do Gato": Como entender o que estamos fazendo?</h2>
+    <div class="analogia">
+        <p><strong>Analogia do Dia:</strong> Imagine que estamos construindo uma <strong>casa</strong>.</p>
+        <ul>
+            <li><strong>HTML (O Esqueleto):</strong> É a fundação, as vigas e as paredes. Ele diz onde fica a sala e onde fica a cozinha, mas sem acabamento.</li>
+            <li><strong>Protocolo HTTP (O Carteiro):</strong> É o serviço que leva e traz as informações entre o seu computador e o servidor, garantindo que a "correspondência" (o site) chegue ao destino.</li>
+        </ul>
+    </div>
+    <p><em>Lembre-se do mestre Steve Krug:</em> Um site deve ser óbvio! A estrutura HTML serve para que o usuário e o navegador entendam o conteúdo sem precisar "pensar" demais.</p>
+</section>
+
+<section>
+    <h2>2. Preparando o Canteiro de Obras (Passo a Passo)</h2>
+    <div class="passo-a-passo">
+        <ol>
+            <li><strong>Abrir o VS Code:</strong> Nossa ferramenta de trabalho principal (o martelo e a trena).</li>
+            <li><strong>Git Clone:</strong> "Copiamos" o terreno onde vamos construir nosso projeto do servidor para o nosso computador.</li>
+            <li><strong>Navegação (<code>cd</code>):</strong> Entramos na pasta do projeto via terminal.</li>
+            <li><strong>Sincronização:</strong> Usamos <code>git status</code> e <code>git fetch</code> para ver se há novidades no projeto.</li>
+            <li><strong>Organização:</strong> Criamos um diretório específico para o projeto para não misturar os arquivos.</li>
+        </ol>
+    </div>
+</section>
+
+<section>
+    <h2>3. Nossa Primeira Estrutura (HTML5)</h2>
+    <p>Baseado nos ensinamentos de <strong>Lucas Mazza</strong> e <strong>Jennifer Robbins</strong>, criamos o arquivo <code>index.html</code>. Este nome é importante: ele é a "porta de entrada" oficial de qualquer site.</p>
+
+    <pre>
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;NossaReceita&lt;/title&gt;
+        &lt;meta charset="utf-8" /&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+        &lt;!-- O h1 é o título principal, o mais importante da página --&gt;
+        &lt;h1&gt;NossaReceita&lt;/h1&gt;
+        
+        &lt;!-- O h2 é um subtítulo que detalha o propósito --&gt;
+        &lt;h2&gt;
+            Bem-vindo à NossaReceita. O seu portal de cursos, dicas 
+            e receitas para uma vida saudável.
+        &lt;/h2&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+</section>
+
+<section>
+    <h2>4. Salvando o Progresso no "Cofre" (Git)</h2>
+    <p>Após escrever o código, precisamos garantir que ele não se perca:</p>
+    <ul>
+        <li><code>git add</code>: Prepara os arquivos (coloca na caixa).</li>
+        <li><code>git commit</code>: Registra a versão (fecha a caixa e coloca uma etiqueta).</li>
+        <li><code>git push</code>: Envia para o servidor (guarda no cofre online).</li>
+    </ul>
+</section>
+
+<footer>
+    <p><strong>Dica de Estudo:</strong> Explore o Moodle para postar suas dúvidas no fórum. A curiosidade é sua melhor ferramenta! <em>Referências: Lucas Mazza (Web do Futuro), Jennifer Robbins (Guia para Iniciantes).</em></p>
+</footer>
+
+</body>
+</html>
