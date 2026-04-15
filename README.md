@@ -1,3 +1,3 @@
 # Trabalhando com HTML / CSS Com Responsividade
 
-Repositório criado para trabalhar a disciplina de Padrões WEB.
+Repositório criado para trabalhar a disciplina de Padrões WEB até ....
