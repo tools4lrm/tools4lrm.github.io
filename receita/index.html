@@ -1,19 +1,39 @@
 
+<!-- o DOCTYPE avisa ao navegador que estamos usando o padrão HTML5. Sem ele, 
+ o navegador pode NÃO sabe como interpretar, de modo específico, a estrutura 
+ do nosso documento. Lembrem que a estruturação dos documentos HTMLs sofreram 
+ mudanças ao longo do tempo -->
 <!DOCTYPE html>
 
-<html>
+<!--  O elemento raiz que envolve tudo. O atributo lang="pt-br" 
+ essencial para tecnologias assistivas saberem o idioma da página. -->
+<html lang="pt-br">
+
+    <!-- <head> é o local utilizado para passar informações para o navegador. Existe
+     o conteúdo da página e as informações que passamos para o navegador, como o <meta charset="utf-8">, 
+     que garante que acentos e caracteres especiais (como o "ç" e o til) sejam exibidos 
+     corretamente. -->
     <head>
+        <!-- O texto que aparece na aba do navegador. É vital para o SEO (mecanismo de busca) 
+         e para o usuário encontrar sua página entre várias abas abertas.-->
         <title>NossaReceita</title>
         <meta charset="utf-8" />
     </head>
 
+    <!-- Tudo o que deseja que o usuário visualize entra aqui. Aqui é o seu documento -->
     <body>
+
+        <!-- O <h1> é o título principal (o nome do site), e o <h2> é o subtítulo explicativo. 
+         A semântica aqui ajuda não apenas o design, mas também ferramentas de busca (como o 
+         Google) a entenderem sobre o que é a página.-->
         <h1>NossaReceita</h1>
         <h2>Bem-vindo à NossaReceita, seu portal de cursos,
             dicas nutricionais e receitas para uma vida 
             saudável
         </h2>
 
+        <!-- o <p> define os parágrafos de texto. Eles ajudam a criar respiros visuais e organizam 
+         a leitura. -->
         <p>Entendemos que a jornada por um estilo de vida mais 
             equilibrado começa com informação de qualidade, 
             por isso, reunimos em um só lugar tudo o que você 
@@ -34,6 +54,8 @@
         </p>
 
     <h3>Por que escolher a NossaReceita?</h3>
+    <!-- Usamos listas não ordenadas para itens onde a ordem não altera o sentido. É uma excelente 
+     forma de listar benefícios, como os diferenciais da "NossaReceita". -->
     <ul>
         <li>Dicas práticas para o seu dia a dia.</li>
         <li>Receitas saudáveis e rápidas de preparar.</li>
@@ -41,14 +63,21 @@
     </ul>
 
     <h3>Agenda de Cursos de Abril</h3>
+
+    <!-- o <table> é o elemento mais complexo do exemplo. -->
     <table border="1">
+        <!-- <tr> (Table Row) cria a linha. Para pensarmos em colunas, temos que 
+         antes pensarmos em linha, então, sempre terá uma linha -->
         <tr>
+            <!-- <th> (Table Header) cria as celulas como cabeçalho. Dessa forma, os conteúdos dessas
+             células serão renderizados em negrito e centralizados. -->
             <th>Dia</th>
             <th>Curso</th>
             <th>Nível</th>
             <th>Vagas</th>
         </tr>
         <tr>
+            <!-- <td> (Table Data) preenche as células com o conteúdo informado. -->
             <td>15/05</td>
             <td>Saladas Tropicais</td>
             <td>Iniciante</td>
@@ -70,6 +99,11 @@
 
     <p>
         Quer saber mais sobre nutrição? Visite o 
+        <!-- <a> (Âncora): É o link que conecta nossa página ao mundo exterior.
+         - O atributo href é o destino (onde o usuário será conduzido ao clicar).
+         - O atributo target="_blank" informa ao navegador que ele deverá abrir o 
+         link em uma nova aba, garantindo que o usuário não abandone seu site ao 
+         clicar para pesquisar em outro lugar. -->
         <a href="https://www.who.int" target="_blank">Portal da Organização Mundial da Saúde</a>.
     </p>
 
