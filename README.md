@@ -11,8 +11,10 @@ Nesse período, os encontros serão utilizados para compreendermos o conteúdo d
 
 ### Notas de Aula
  
- - 08.04.2026 - Aula : [Configuração do Ambiente de Desenvolvimento](docs/aulas/17.04.md)
- - 27.03.2026 - Aula : [Introdução ao Git / GitHub](docs/aulas/27.03.md)
+ 
+ - 29.04.2026 - Aula : [Table / Git / GitHub no VS Code]()
+ - 17.04.2026 - Aula : [HTML / Git / GitHub no VS Code](aulas/17.04.md)
+ - 27.03.2026 - Aula : [Introdução ao Git / GitHub](aulas/27.03.md)
 
 ## Uma Breve Descrição do Contexto / Problema
 
