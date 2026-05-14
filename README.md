@@ -12,8 +12,8 @@ Nesse período, os encontros serão utilizados para compreendermos o conteúdo d
 ### Notas de Aula
  
  
- - 29.04.2026 - Aula : [Table / Git / GitHub no VS Code]()
- - 17.04.2026 - Aula : [HTML / Git / GitHub no VS Code](aulas/17.04.md)
+ - 15.05.2026 - Aula : [Formatação e Semântica de Texto em HTML - Git/GitHub no VS Code](15.05)
+ - 13.05.2026 - Aula : [Anatomia e Semântica do Portal NossaReceita](aulas/13.05.md)
  - 27.03.2026 - Aula : [Introdução ao Git / GitHub](aulas/27.03.md)
 
 ## Uma Breve Descrição do Contexto / Problema
