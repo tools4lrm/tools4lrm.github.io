@@ -1,0 +1,21 @@
+
+/* 1. Mudando a cor do texto de todo o corpo do site */
+body {
+    color: #333333; /* Um cinza escuro, mais suave que o preto puro */
+}
+
+/* 2. Destacando o título principal com a cor da identidade do cliente */
+h1 {
+    color: #2e7d32; /* Verde que remete à saúde e nutrição */
+    text-align: center; /* Centraliza o nome do portal na tela */
+}
+
+/* 3. Colocando uma cor de fundo sutil no formulário de contato */
+fieldset {
+    background-color: #f5f5f5; /* Um fundo cinza claro para destacar a seção */
+}
+
+/* 4. Colorindo o fundo do rodapé semântico */
+footer {
+    background-color: #e8f5e9; /* Um fundo verde bem clarinho */
+}
