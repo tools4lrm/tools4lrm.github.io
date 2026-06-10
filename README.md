@@ -11,6 +11,7 @@ Nesse período, os encontros serão utilizados para compreendermos o conteúdo d
 
 ### Notas de Aula
  
+ - 10.06.2026 - Aula : [Introdução ao CSS — Dando Vida e Estilo ao Portal NossaReceita](aulas/10.06.md)  
  - 20.05.2026 - Aula : [Expandindo Tabelas com `colspan` e `rowspan`](aulas/20.05.md) & [Capturando dados com Formulário HTML](aulas/20.05.form.md)
  - 15.05.2026 - Aula : [Formatação e Semântica de Texto em HTML - Git/GitHub no VS Code](aulas/15.05.md)
  - 13.05.2026 - Aula : [Anatomia e Semântica do Portal NossaReceita](aulas/13.05.md)
