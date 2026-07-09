@@ -32,7 +32,7 @@ body {
 .titulos-topo h1 {
     color: #2e7d32;
     text-align: left;      /* Mudamos de center para left, combinando com o novo layout */
-    margin: 0 0 10px 0;    /* Remove margens desnecessárias e deixa 10px abaixo do título */
+    margin: 0 0 2px 0;    /* Remove margens desnecessárias e deixa 10px abaixo do título */
 }
 
 .titulos-topo h2 {
