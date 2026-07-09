@@ -13,27 +13,45 @@ h1 {
 /* 3. Colorindo o fundo do rodapé semântico */
 footer {
     background-color: #e8f5e9; /* Um fundo verde bem clarinho */
+    text-align: center; /* Centraliza o nome do portal na tela */
 }
 
-/* --- SELETORES PERSONALIZADOS E BOX MODEL --- */
+/* --- SELETORES PERSONALIZADOS, BOX MODEL E DISPLAY --- */
 
-/* Alvo: Qualquer elemento que assine a classe "caixa-contato" */
 .caixa-contato {
-    background-color: #f5f5f5; /* [cite: 653] */
+    background-color: #f5f5f5;
     border: 2px solid #2e7d32;
-    
-    /* Afasta o conteúdo interno das bordas em 20 pixels, gerando respiro */
     padding: 20px; 
     
-    /* Cria um espaço de 30 pixels abaixo do formulário, empurrando o footer */
-    margin-bottom: 30px; 
+    /* MODIFICAÇÃO: Restringe o tamanho do formulário solicitado pelo cliente */
+    max-width: 500px;
+    
+    /* MODIFICAÇÃO: Centraliza a caixa na tela e adiciona 30px de espaço abaixo */
+    margin: 0 auto 30px auto; 
 }
 
-/* Alvo Único: O elemento que possui o ID exclusivo "btn-enviar" */
+/* Alvo: Modificando as labels e campos internos do formulário para virarem blocos */
+.caixa-contato label,
+.caixa-contato input,
+.caixa-contato textarea {
+    display: block; /* Força cada elemento a ocupar sua própria linha */
+    width: 100%;    /* Faz os inputs e textareas preencherem toda a largura interna da caixa */
+    margin-bottom: 10px; /* Cria um pequeno espaçamento inferior entre os campos */
+}
+
+/* Ajuste específico para a label não colar no input */
+.caixa-contato label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
 #btn-enviar {
-    background-color: #2e7d32; /* Fundo verde escuro institucional */
-    color: #ffffff;            /* Texto branco para alto contraste */
-    border: none;              /* Remove a borda padrão cinza do navegador */
-    padding: 10px 20px;        /* 10px de preenchimento vertical e 20px nas laterais */
-    cursor: pointer;           /* Altera a seta do mouse para o ícone de clique */
+    display: block;            /* Transforma o botão em bloco para aplicar margens */
+    width: 100%;               /* Faz o botão ocupar toda a largura do formulário */
+    background-color: #2e7d32; 
+    color: #ffffff;            
+    border: none;              
+    padding: 12px;        
+    cursor: pointer;           
+    font-weight: bold;
 }
