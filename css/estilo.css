@@ -1,57 +1,65 @@
-
-/* 1. Mudando a cor do texto de todo o corpo do site */
+/* --- ESTILOS GLOBAIS E ESTRUTURA --- */
 body {
-    color: #333333; /* Um cinza escuro, mais suave que o preto puro */
+    color: #333333;
+    background-color: #f9f9f9; /* Um fundo bem claro para contrastar com o container */
+    margin: 0;
+    padding: 0;
 }
 
-/* 2. Destacando o título principal com a cor da identidade do cliente */
-h1 {
-    color: #2e7d32; /* Verde que remete à saúde e nutrição */
-    text-align: center; /* Centraliza o nome do portal na tela */
+/* 1. Limitando e centralizando todo o corpo do site */
+.container {
+    width: 80%;           /* Ocupa exatamente 80% da largura da tela do usuário */
+    max-width: 1200px;     /* Impede que o site estique demais em telas gigantescas UltraWide */
+    margin: 0 auto;       /* Zera margens acima/abaixo e centraliza nas laterais automaticamente */
+    background-color: #ffffff; /* Fundo branco para destacar o conteúdo do fundo do body */
+    padding: 20px;        /* Afasta o conteúdo das bordas desse grande bloco */
 }
 
-/* 3. Colorindo o fundo do rodapé semântico */
+/* 2. O Motor do Cabeçalho: Flexbox */
+.topo-site {
+    display: flex;         /* Ativa o modo Flexbox: alinha imagem e títulos lado a lado */
+    align-items: center;   /* Centraliza verticalmente a imagem com o bloco de texto */
+    border-bottom: 3px solid #2e7d32; /* Uma linha verde elegante separando o topo do site */
+    padding-bottom: 20px;  /* Espaço entre o conteúdo do cabeçalho e a linha divisória */
+    margin-bottom: 20px;   /* Afasta o cabeçalho do primeiro parágrafo do site */
+}
+
+/* Ajustando o espaçamento interno do grupo de textos do cabeçalho */
+.titulos-topo {
+    margin-left: 20px;     /* Empurra os textos para a direita, dando distância do logotipo */
+}
+
+.titulos-topo h1 {
+    color: #2e7d32;
+    text-align: left;      /* Mudamos de center para left, combinando com o novo layout */
+    margin: 0 0 10px 0;    /* Remove margens desnecessárias e deixa 10px abaixo do título */
+}
+
+.titulos-topo h2 {
+    font-size: 1.1rem;     /* Ajusta o tamanho do subtítulo para equilibrar com o logotipo */
+    color: #666666;
+    margin: 0;
+}
+
+/* --- MANUTENÇÃO DOS ESTILOS ANTERIORES (FORMULÁRIO E FOOTER) --- */
 footer {
-    background-color: #e8f5e9; /* Um fundo verde bem clarinho */
-    text-align: center; /* Centraliza o nome do portal na tela */
+    background-color: #e8f5e9;
+    text-align: center;
+    padding: 15px;
 }
-
-/* --- SELETORES PERSONALIZADOS, BOX MODEL E DISPLAY --- */
 
 .caixa-contato {
     background-color: #f5f5f5;
     border: 2px solid #2e7d32;
     padding: 20px; 
-    
-    /* MODIFICAÇÃO: Restringe o tamanho do formulário solicitado pelo cliente */
     max-width: 500px;
-    
-    /* MODIFICAÇÃO: Centraliza a caixa na tela e adiciona 30px de espaço abaixo */
-    margin: 0 auto 30px auto; 
+    margin: 20px auto;    /* Centraliza o formulário dentro dos 80% do contêiner */
 }
 
-/* Alvo: Modificando as labels e campos internos do formulário para virarem blocos */
 .caixa-contato label,
 .caixa-contato input,
 .caixa-contato textarea {
-    display: block; /* Força cada elemento a ocupar sua própria linha */
-    width: 100%;    /* Faz os inputs e textareas preencherem toda a largura interna da caixa */
-    margin-bottom: 10px; /* Cria um pequeno espaçamento inferior entre os campos */
-}
-
-/* Ajuste específico para a label não colar no input */
-.caixa-contato label {
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-#btn-enviar {
-    display: block;            /* Transforma o botão em bloco para aplicar margens */
-    width: 100%;               /* Faz o botão ocupar toda a largura do formulário */
-    background-color: #2e7d32; 
-    color: #ffffff;            
-    border: none;              
-    padding: 12px;        
-    cursor: pointer;           
-    font-weight: bold;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
 }
