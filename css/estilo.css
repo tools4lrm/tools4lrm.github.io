@@ -10,12 +10,30 @@ h1 {
     text-align: center; /* Centraliza o nome do portal na tela */
 }
 
-/* 3. Colocando uma cor de fundo sutil no formulário de contato */
-fieldset {
-    background-color: #f5f5f5; /* Um fundo cinza claro para destacar a seção */
-}
-
-/* 4. Colorindo o fundo do rodapé semântico */
+/* 3. Colorindo o fundo do rodapé semântico */
 footer {
     background-color: #e8f5e9; /* Um fundo verde bem clarinho */
+}
+
+/* --- SELETORES PERSONALIZADOS E BOX MODEL --- */
+
+/* Alvo: Qualquer elemento que assine a classe "caixa-contato" */
+.caixa-contato {
+    background-color: #f5f5f5; /* [cite: 653] */
+    border: 2px solid #2e7d32;
+    
+    /* Afasta o conteúdo interno das bordas em 20 pixels, gerando respiro */
+    padding: 20px; 
+    
+    /* Cria um espaço de 30 pixels abaixo do formulário, empurrando o footer */
+    margin-bottom: 30px; 
+}
+
+/* Alvo Único: O elemento que possui o ID exclusivo "btn-enviar" */
+#btn-enviar {
+    background-color: #2e7d32; /* Fundo verde escuro institucional */
+    color: #ffffff;            /* Texto branco para alto contraste */
+    border: none;              /* Remove a borda padrão cinza do navegador */
+    padding: 10px 20px;        /* 10px de preenchimento vertical e 20px nas laterais */
+    cursor: pointer;           /* Altera a seta do mouse para o ícone de clique */
 }
