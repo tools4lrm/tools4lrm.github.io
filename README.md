@@ -11,7 +11,7 @@ Nesse período, os encontros serão utilizados para compreendermos o conteúdo d
 
 ### Notas de Aula
  
- - 10.07.2026 - Aula : [Arquitetura de Layout Global e Alinhamento com Flexbox - HEADER](aulas/10.07.md)  
+ - 10.07.2026 - Aula : [Arquitetura de Layout Global e Alinhamento com Flexbox - HEADER](aulas/10.07.A.md)  
  - 08.07.2026 - Aula : [Seletores Personalizados (Classes e IDs) e Box Model](aulas/08.07.A.md) e [Fluxo de Elementos, Larguras e Centralização](aulas/08.07.B.md) 
  - 10.06.2026 - Aula : [Introdução ao CSS — Dando Vida e Estilo ao Portal NossaReceita](aulas/10.06.md)  
  - 20.05.2026 - Aula : [Expandindo Tabelas com `colspan` e `rowspan`](aulas/20.05.md) & [Capturando dados com Formulário HTML](aulas/20.05.form.md)
